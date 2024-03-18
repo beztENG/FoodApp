@@ -3,7 +3,7 @@
         <a href="/" class="logo">Vinh's Food !</a>
         <nav>
             <ul>
-                <li>
+                <!-- <li>
                     <a routerLink="/login">Login</a>
                 </li>
                 <li class="menu-container">
@@ -18,6 +18,19 @@
                     <a routerLink="/cart-page">
                         Cart <span>3</span>
                     </a>
+                </li> -->
+
+                <li class="menu-container">
+                    <a routerLink="/dashboard">Setting ⚙️</a>
+                    <div class="menu">
+                        <a routerLink="/login">Login</a>
+                        <a routerLink="/profile">Profile</a>
+                        <a routerLink="/orders">Orders</a>
+                        <a href="">Logout</a>
+                        <a routerLink="/cart-page">
+                            Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </nav>
